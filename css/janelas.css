@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #292736;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #21222c;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.janela {
+  color: #f8f8ec;
+  padding: 10px 0px 0px 15px;
+}
+
+header a {
+  color: #afafaf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primaryColor {
+  color: #69ff8e;
+}
+
+.secondaryColor {
+  color: #ba99e4;
+}
