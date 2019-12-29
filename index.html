@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rogério Tavares</title>
+    <title>Terminal do Roger</title>
+    <link rel="stylesheet" href="./css/janelas.css" />
+    <link rel="stylesheet" href="./css/comand.css" />
   </head>
   <body>
-    <h1>Teste</h1>
+    <header>
+      <a href="index.html">Terminal do Roger</a>
+      <div>
+        <svg height="20px" width="20px">
+          <circle cx="8" cy="8" r="8" fill="yellow" />
+        </svg>
+        <svg height="20px" width="20px">
+          <circle cx="8" cy="8" r="8" fill="red" />
+        </svg>
+      </div>
+    </header>
+    <div class="janela">
+      <img src="./img/rogerio.svg" alt="Rogério" class="title" />
+      <p>Se você estiver perdido, digite "help"!</p>
+      <div class="comand">
+        <span class="primaryColor">terminalLinux@user</span>
+        <span>:</span>
+        <span class="secondaryColor">~/</span>
+        <span>$ </span>
+        <input
+          type="text"
+          id="comandInput"
+          class="comandInput"
+          maxlength="12"
+          autofocus
+        />
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
