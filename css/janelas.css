@@ -22,6 +22,7 @@ header {
 .janela {
   color: #f8f8ec;
   padding: 10px 0px 0px 15px;
+  overflow: auto;
 }
 
 header a {
