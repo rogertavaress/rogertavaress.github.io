@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Terminal do Roger</title>
     <link rel="stylesheet" href="./css/janelas.css" />
+    <link rel="stylesheet" href="./css/comand.css" />
   </head>
   <body>
     <header>
@@ -19,9 +20,30 @@
         </svg>
       </div>
     </header>
-    <div class="janela"></div>
-
-    <script src="./js/terminal.js"></script>
+    <div class="janela">
+      <pre>
+        .______        ______     _______  _______ .______       __    ______   
+        |   _  \      /  __  \   /  _____||   ____||   _  \     |  |  /  __  \  
+        |  |_)  |    |  |  |  | |  |  __  |  |__   |  |_)  |    |  | |  |  |  | 
+        |      /     |  |  |  | |  | |_ | |   __|  |      /     |  | |  |  |  | 
+        |  |\  \----.|  `--'  | |  |__| | |  |____ |  |\  \----.|  | |  `--'  | 
+        | _| `._____| \______/   \______| |_______|| _| `._____||__|  \______/  
+      </pre>
+      <p>Se você estiver perdido, digite "help"!</p>
+      <div class="comand">
+        <span class="primaryColor">terminalLinux@user</span>
+        <span>:</span>
+        <span class="secondaryColor">~/</span>
+        <span>$ </span>
+        <input
+          type="text"
+          id="comandInput"
+          class="comandInput"
+          maxlength="15"
+          autofocus
+        />
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
