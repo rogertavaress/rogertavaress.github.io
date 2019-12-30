@@ -239,6 +239,38 @@ function comandSkills() {
   title.setAttribute("alt", "Habilidades");
   title.setAttribute("class", "title");
   const list = document.createElement("p");
+  const pre = document.createElement("pre");
+  pre.appendChild(document.createTextNode("Linguagens:"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓▓▓      ] 4/10 - JavaScript"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓        ] 2/10 - C#"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("Frontend:"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓▓▓▓▓▓   ] 7/10 - HTML"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓▓▓▓▓    ] 6/10 - CSS"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓▓       ] 3/10 - Angular"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("Backend:"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓▓▓▓     ] 5/10 - Node.JS"));
+  pre.appendChild(document.createElement("br"));
+  pre.appendChild(document.createTextNode("[▓▓        ] 2/10 - Dotnet"));
+
+  list.appendChild(pre);
+
+  list.appendChild(document.createTextNode("Para mais detalhes visite: "));
+  const linkedinLink = document.createElement("a");
+  linkedinLink.setAttribute("href", "https://github.com/rogertavaress");
+  linkedinLink.setAttribute("class", "linkTerminal");
+  linkedinLink.appendChild(
+    document.createTextNode("https://github.com/rogertavaress")
+  );
+
+  list.appendChild(linkedinLink);
 
   area.appendChild(title);
   area.appendChild(list);
