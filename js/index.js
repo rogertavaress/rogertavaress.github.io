@@ -1,6 +1,5 @@
 const janela = document.getElementsByClassName("janela")[0];
 let comandInputs = document.getElementsByClassName("comandInput");
-console.log(janela);
 
 function ultimoInput() {
   let comandInput = comandInputs[comandInputs.length - 1];
@@ -34,11 +33,11 @@ function gerarComand() {
   parte1.appendChild(document.createTextNode("terminalLinux@user"));
 
   const parte2 = document.createElement("span");
-  parte2.appendChild(document.createTextNode(":"));
+  parte2.appendChild(document.createTextNode(" : "));
 
   const parte3 = document.createElement("span");
   parte3.setAttribute("class", "secondaryColor");
-  parte3.appendChild(document.createTextNode("~/"));
+  parte3.appendChild(document.createTextNode("~/ "));
 
   const parte4 = document.createElement("span");
   parte4.appendChild(document.createTextNode("$ "));
@@ -62,16 +61,42 @@ function gerarComand() {
   return comand;
 }
 
+function fundoScroll() {
+  var heightPage = document.body.scrollHeight;
+  window.scrollTo(0, heightPage);
+}
+
 function outputComand(comand) {
   if (comand === "HELP") {
-    console.log("Ajuda!");
     comandHelp();
     janela.appendChild(gerarComand());
     desabilitarInputs();
+    fundoScroll();
+  } else if (comand === "ABOUT") {
+    comandAbout();
+    janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
   } else if (comand === "CLEAR") {
-    console.log("Limpar!");
     comandClear();
     janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
+  } else if (comand === "") {
+    janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
+  } else {
+    const area = document.createElement("div");
+    const resp = document.createElement("p");
+    resp.appendChild(
+      document.createTextNode("Desculpe, comando não encontrado.")
+    );
+    area.appendChild(resp);
+    janela.appendChild(area);
+    janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
   }
 }
 
@@ -117,8 +142,55 @@ function comandHelp() {
   janela.appendChild(area);
 }
 
-function comandAbout() {}
+function comandAbout() {
+  const area = document.createElement("div");
+  const title = document.createElement("img");
+  title.setAttribute("src", "./img/about.svg");
+  title.setAttribute("alt", "About me");
+  title.setAttribute("class", "title");
+  const list = document.createElement("p");
+  list.appendChild(
+    document.createTextNode(
+      "Olá, meu nome é Rogério Tavares, mas meus amigos me chamam de Roger."
+    )
+  );
+  list.appendChild(document.createElement("br"));
+  list.appendChild(
+    document.createTextNode(
+      "Tenho " + calculaIdade() + " anos e sou programador desde o ano de 2019."
+    )
+  );
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(
+    document.createTextNode(
+      "Meu foco principal é o desenvolvimento de aplicações Web."
+    )
+  );
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(
+    document.createTextNode(
+      "Passo o meu tempo livre aprendendo sobre as novas tecnologias na stack que trabalho/estudo."
+    )
+  );
+
+  area.appendChild(title);
+  area.appendChild(list);
+
+  janela.appendChild(area);
+}
 
 function comandClear() {
   janela.innerHTML = "";
+}
+
+function calculaIdade() {
+  const hoje = new Date();
+  const nascimento = new Date(1996, 7, 21);
+  return Math.floor(
+    Math.ceil(
+      Math.abs(nascimento.getTime() - hoje.getTime()) / (1000 * 3600 * 24)
+    ) / 365.25
+  );
 }
