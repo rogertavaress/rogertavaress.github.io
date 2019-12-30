@@ -45,7 +45,6 @@ function gerarComand() {
   const input = document.createElement("input");
   input.setAttribute("type", "text");
   input.setAttribute("class", "comandInput");
-  input.setAttribute("maxlength", "12");
   input.addEventListener("keydown", function(e) {
     if (e.keyCode === 13) {
       outputComand(ultimoInput().value.toUpperCase());
@@ -74,6 +73,11 @@ function outputComand(comand) {
     fundoScroll();
   } else if (comand === "ABOUT") {
     comandAbout();
+    janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
+  } else if (comand === "EXPERIENCES") {
+    comandExperiences();
     janela.appendChild(gerarComand());
     desabilitarInputs();
     fundoScroll();
@@ -174,6 +178,43 @@ function comandAbout() {
       "Passo o meu tempo livre aprendendo sobre as novas tecnologias na stack que trabalho/estudo."
     )
   );
+
+  area.appendChild(title);
+  area.appendChild(list);
+
+  janela.appendChild(area);
+}
+
+function comandExperiences() {
+  const area = document.createElement("div");
+  const title = document.createElement("img");
+  title.setAttribute("src", "./img/experiences.svg");
+  title.setAttribute("alt", "Experiences");
+  title.setAttribute("class", "title");
+  const list = document.createElement("p");
+  list.appendChild(document.createTextNode("Experiências Profissionais:"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("ESTAGIÁRIO DE DESENVOLVIMENTO"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("VECTRA Consultoria e Serviços"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("de Set/2019 até o momento."));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("Para mais detalhes visite: "));
+
+  const linkedinLink = document.createElement("a");
+  linkedinLink.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/rogertavaress/"
+  );
+  linkedinLink.setAttribute("class", "linkTerminal");
+  linkedinLink.appendChild(
+    document.createTextNode("https://www.linkedin.com/in/rogertavaress")
+  );
+
+  list.appendChild(linkedinLink);
 
   area.appendChild(title);
   area.appendChild(list);
