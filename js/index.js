@@ -185,7 +185,7 @@ function comandAbout() {
   list.appendChild(document.createElement("br"));
   list.appendChild(
     document.createTextNode(
-      "Passo o meu tempo livre aprendendo sobre as novas tecnologias na stack que trabalho/estudo."
+      "Passo o meu tempo livre aprendendo sobre as novas tecnologias da stack que trabalho/estudo."
     )
   );
 
@@ -305,12 +305,20 @@ function comandContatos() {
   const linkedinLink = document.createElement("a");
   linkedinLink.setAttribute(
     "href",
-    "https://www.linkedin.com/in/rogertavaress/"
+    "https://www.linkedin.com/in/rogertavaress"
   );
   linkedinLink.setAttribute("class", "linkTerminal");
   linkedinLink.setAttribute("target", "_blank");
   linkedinLink.appendChild(
     document.createTextNode("https://www.linkedin.com/in/rogertavaress")
+  );
+
+  const twitterLink = document.createElement("a");
+  twitterLink.setAttribute("href", "https://twitter.com/rogertavaress");
+  twitterLink.setAttribute("class", "linkTerminal");
+  twitterLink.setAttribute("target", "_blank");
+  twitterLink.appendChild(
+    document.createTextNode("https://twitter.com/rogertavaress")
   );
 
   list.appendChild(document.createTextNode("Onde você pode me encontrar?"));
@@ -324,6 +332,9 @@ function comandContatos() {
   list.appendChild(document.createElement("br"));
   list.appendChild(document.createTextNode("Linkedin: "));
   list.appendChild(linkedinLink);
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("Twitter: "));
+  list.appendChild(twitterLink);
 
   area.appendChild(title);
   area.appendChild(list);
