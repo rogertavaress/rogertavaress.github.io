@@ -53,6 +53,7 @@ body {
   }
   body {
     background-position-x: 65%;
+    background-attachment: initial;
   }
 }
 
