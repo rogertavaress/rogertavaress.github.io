@@ -66,22 +66,32 @@ function fundoScroll() {
 }
 
 function outputComand(comand) {
-  if (comand === "HELP") {
+  if (comand === "AJUDA") {
     comandHelp();
     janela.appendChild(gerarComand());
     desabilitarInputs();
     fundoScroll();
-  } else if (comand === "ABOUT") {
+  } else if (comand === "SOBRE") {
     comandAbout();
     janela.appendChild(gerarComand());
     desabilitarInputs();
     fundoScroll();
-  } else if (comand === "EXPERIENCES") {
+  } else if (comand === "EXP") {
     comandExperiences();
     janela.appendChild(gerarComand());
     desabilitarInputs();
     fundoScroll();
-  } else if (comand === "CLEAR") {
+  } else if (comand === "HAB") {
+    comandSkills();
+    janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
+  } else if (comand === "CONTATOS") {
+    comandContatos();
+    janela.appendChild(gerarComand());
+    desabilitarInputs();
+    fundoScroll();
+  } else if (comand === "LIMPAR") {
     comandClear();
     janela.appendChild(gerarComand());
     desabilitarInputs();
@@ -107,7 +117,7 @@ function outputComand(comand) {
 function comandHelp() {
   const area = document.createElement("div");
   const title = document.createElement("img");
-  title.setAttribute("src", "./img/help.svg");
+  title.setAttribute("src", "./img/ajuda.svg");
   title.setAttribute("alt", "Help");
   title.setAttribute("class", "title");
   const list = document.createElement("p");
@@ -115,30 +125,30 @@ function comandHelp() {
   list.appendChild(document.createElement("br"));
   list.appendChild(document.createElement("br"));
   list.appendChild(
-    document.createTextNode("- Help -> Listar todos os comandos.")
+    document.createTextNode("- Ajuda -> Listar todos os comandos.")
   );
   list.appendChild(document.createElement("br"));
   list.appendChild(
-    document.createTextNode("- About -> Mostrar algumas informações sobre mim.")
-  );
-  list.appendChild(document.createElement("br"));
-  list.appendChild(
-    document.createTextNode(
-      "- Experiences -> Listar todas as minhas experiências profissionais."
-    )
+    document.createTextNode("- Sobre -> Mostrar algumas informações sobre mim.")
   );
   list.appendChild(document.createElement("br"));
   list.appendChild(
     document.createTextNode(
-      "- Skills -> Mostrar todas as tecnologias que estudo."
+      "- Exp -> Listar todas as minhas experiências profissionais."
     )
   );
   list.appendChild(document.createElement("br"));
   list.appendChild(
-    document.createTextNode("- Contact -> Mostrar onde você pode me encontrar.")
+    document.createTextNode("- Hab -> Mostrar todas as tecnologias que estudo.")
   );
   list.appendChild(document.createElement("br"));
-  list.appendChild(document.createTextNode("- Clear -> Limpar a tela."));
+  list.appendChild(
+    document.createTextNode(
+      "- Contatos -> Mostrar onde você pode me encontrar."
+    )
+  );
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("- Limpar -> Limpar a tela."));
 
   area.appendChild(title);
   area.appendChild(list);
@@ -149,7 +159,7 @@ function comandHelp() {
 function comandAbout() {
   const area = document.createElement("div");
   const title = document.createElement("img");
-  title.setAttribute("src", "./img/about.svg");
+  title.setAttribute("src", "./img/sobre.svg");
   title.setAttribute("alt", "About me");
   title.setAttribute("class", "title");
   const list = document.createElement("p");
@@ -188,8 +198,8 @@ function comandAbout() {
 function comandExperiences() {
   const area = document.createElement("div");
   const title = document.createElement("img");
-  title.setAttribute("src", "./img/experiences.svg");
-  title.setAttribute("alt", "Experiences");
+  title.setAttribute("src", "./img/exp.svg");
+  title.setAttribute("alt", "Experiências");
   title.setAttribute("class", "title");
   const list = document.createElement("p");
   list.appendChild(document.createTextNode("Experiências Profissionais:"));
@@ -215,6 +225,34 @@ function comandExperiences() {
   );
 
   list.appendChild(linkedinLink);
+
+  area.appendChild(title);
+  area.appendChild(list);
+
+  janela.appendChild(area);
+}
+
+function comandSkills() {
+  const area = document.createElement("div");
+  const title = document.createElement("img");
+  title.setAttribute("src", "./img/hab.svg");
+  title.setAttribute("alt", "Habilidades");
+  title.setAttribute("class", "title");
+  const list = document.createElement("p");
+
+  area.appendChild(title);
+  area.appendChild(list);
+
+  janela.appendChild(area);
+}
+
+function comandContatos() {
+  const area = document.createElement("div");
+  const title = document.createElement("img");
+  title.setAttribute("src", "./img/contatos.svg");
+  title.setAttribute("alt", "Habilidades");
+  title.setAttribute("class", "title");
+  const list = document.createElement("p");
 
   area.appendChild(title);
   area.appendChild(list);

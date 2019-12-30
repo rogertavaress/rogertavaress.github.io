@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="help.svg">
+   sodipodi:docname="hab.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1284.1111"
+     inkscape:cx="1937.9074"
      inkscape:cy="-19.76458"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -57,38 +57,38 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
-       x="275.81262"
+       x="47.658588"
        y="203.93591"
        id="text12"><tspan
          sodipodi:role="line"
-         x="275.81262"
+         x="47.658588"
          y="203.93591"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan24"> __    __   _______  __      .______   </tspan><tspan
+         id="tspan24"> __    __       ___      .______    __   __       __   _______       ___       _______   _______      _______.</tspan><tspan
          sodipodi:role="line"
-         x="275.81262"
+         x="47.658588"
          y="217.16508"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan45">|  |  |  | |   ____||  |     |   _  \  </tspan><tspan
+         id="tspan45">|  |  |  |     /   \     |   _  \  |  | |  |     |  | |       \     /   \     |       \ |   ____|    /       |</tspan><tspan
          sodipodi:role="line"
-         x="275.81262"
+         x="47.658588"
          y="230.39424"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan47">|  |__|  | |  |__   |  |     |  |_)  | </tspan><tspan
+         id="tspan47">|  |__|  |    /  ^  \    |  |_)  | |  | |  |     |  | |  .--.  |   /  ^  \    |  .--.  ||  |__      |   (----`</tspan><tspan
          sodipodi:role="line"
-         x="275.81262"
+         x="47.658588"
          y="243.62341"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan49">|   __   | |   __|  |  |     |   ___/  </tspan><tspan
+         id="tspan49">|   __   |   /  /_\  \   |   _  &lt;  |  | |  |     |  | |  |  |  |  /  /_\  \   |  |  |  ||   __|      \   \    </tspan><tspan
          sodipodi:role="line"
-         x="275.81262"
+         x="47.658588"
          y="256.85257"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan51">|  |  |  | |  |____ |  `----.|  |      </tspan><tspan
+         id="tspan51">|  |  |  |  /  _____  \  |  |_)  | |  | |  `----.|  | |  '--'  | /  _____  \  |  '--'  ||  |____ .----)   |   </tspan><tspan
          sodipodi:role="line"
-         x="275.81262"
+         x="47.658588"
          y="270.08176"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan55">|__|  |__| |_______||_______|| _|      </tspan></text>
+         id="tspan55">|__|  |__| /__/     \__\ |______/  |__| |_______||__| |_______/ /__/     \__\ |_______/ |_______||_______/    </tspan></text>
   </g>
 </svg>

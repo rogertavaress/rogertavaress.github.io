@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
-   sodipodi:docname="about.svg">
+   sodipodi:docname="ajuda.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="1397.2314"
-     inkscape:cy="67.909516"
+     inkscape:zoom="0.35"
+     inkscape:cx="1284.1111"
+     inkscape:cy="-19.76458"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,38 +57,38 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
-       x="137.00714"
-       y="203.93591"
+       x="208.90973"
+       y="203.14784"
        id="text12"><tspan
          sodipodi:role="line"
-         x="137.00714"
-         y="203.93591"
+         x="208.90973"
+         y="203.14784"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan24">     ___      .______     ______    __    __  .___________.   .___  ___.  _______ </tspan><tspan
+         id="tspan24">     ___             __   __    __   _______       ___      </tspan><tspan
          sodipodi:role="line"
-         x="137.00714"
-         y="217.16508"
+         x="208.90973"
+         y="216.37701"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan45">    /   \     |   _  \   /  __  \  |  |  |  | |           |   |   \/   | |   ____|</tspan><tspan
+         id="tspan45">    /   \           |  | |  |  |  | |       \     /   \     </tspan><tspan
          sodipodi:role="line"
-         x="137.00714"
-         y="230.39424"
+         x="208.90973"
+         y="229.60617"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan47">   /  ^  \    |  |_)  | |  |  |  | |  |  |  | `---|  |----`   |  \  /  | |  |__   </tspan><tspan
+         id="tspan47">   /  ^  \          |  | |  |  |  | |  .--.  |   /  ^  \    </tspan><tspan
          sodipodi:role="line"
-         x="137.00714"
-         y="243.62341"
+         x="208.90973"
+         y="242.83534"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan49">  /  /_\  \   |   _  &lt;  |  |  |  | |  |  |  |     |  |        |  |\/|  | |   __|  </tspan><tspan
+         id="tspan49">  /  /_\  \   .--.  |  | |  |  |  | |  |  |  |  /  /_\  \   </tspan><tspan
          sodipodi:role="line"
-         x="137.00714"
-         y="256.85257"
+         x="208.90973"
+         y="256.06451"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan51"> /  _____  \  |  |_)  | |  `--'  | |  `--'  |     |  |        |  |  |  | |  |____ </tspan><tspan
+         id="tspan51"> /  _____  \  |  `--'  | |  `--'  | |  '--'  | /  _____  \  </tspan><tspan
          sodipodi:role="line"
-         x="137.00714"
-         y="270.08176"
+         x="208.90973"
+         y="269.2937"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.26458332;fill:#ffffff;"
-         id="tspan55">/__/     \__\ |______/   \______/   \______/      |__|        |__|  |__| |_______|</tspan></text>
+         id="tspan55">/__/     \__\  \______/   \______/  |_______/ /__/     \__\ </tspan></text>
   </g>
 </svg>
