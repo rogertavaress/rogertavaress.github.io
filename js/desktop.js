@@ -27,7 +27,10 @@ function minimizar() {
   const botaoImg = document.getElementById("btImg");
 
   body.style.backgroundImage = "url('./img/wallpaper.jpg')";
-  body.style.backgroundSize = "cover";
+  body.style.backgroundRepeat = "no-repeat";
+  body.style.webkitBackgroundSize = "cover";
+  body.style.backgroundAttachment = "fixed";
+
   janela.style.display = "none";
 
   botaoA.onclick = maximizar;

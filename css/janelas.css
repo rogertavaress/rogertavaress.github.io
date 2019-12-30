@@ -25,13 +25,41 @@ body {
 .barratituloMin {
   position: fixed;
   bottom: 0;
-  width: 50%;
+  width: 35%;
 
   display: flex;
   justify-content: space-between;
   background-color: #21222c;
   padding: 10px 0px 10px 0px;
   border-radius: 5px 5px 0px 0px;
+}
+
+.botao {
+  height: 1.5em;
+}
+
+@media (max-width: 1025px) {
+  .barratituloMin {
+    width: 50%;
+  }
+  body {
+    background-position-x: 65%;
+  }
+}
+
+@media (max-width: 690px) {
+  .barratituloMin {
+    width: 100%;
+  }
+  body {
+    background-position-x: 65%;
+  }
+}
+
+@media (max-width: 350px) {
+  .botao {
+    height: 1em;
+  }
 }
 
 header > div,
@@ -57,8 +85,4 @@ header a {
 
 .secondaryColor {
   color: #ba99e4;
-}
-
-.botao {
-  height: 1.5em;
 }
