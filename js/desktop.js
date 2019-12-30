@@ -29,6 +29,7 @@ function minimizar() {
   body.style.backgroundImage = "url('./img/wallpaper.jpg')";
   body.style.backgroundRepeat = "no-repeat";
   body.style.webkitBackgroundSize = "cover";
+  body.style.backgroundSize = "cover";
   body.style.backgroundAttachment = "fixed";
 
   janela.style.display = "none";
