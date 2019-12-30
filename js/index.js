@@ -220,6 +220,7 @@ function comandExperiences() {
     "https://www.linkedin.com/in/rogertavaress/"
   );
   linkedinLink.setAttribute("class", "linkTerminal");
+  linkedinLink.setAttribute("target", "_blank");
   linkedinLink.appendChild(
     document.createTextNode("https://www.linkedin.com/in/rogertavaress")
   );
@@ -263,14 +264,15 @@ function comandSkills() {
   list.appendChild(pre);
 
   list.appendChild(document.createTextNode("Para mais detalhes visite: "));
-  const linkedinLink = document.createElement("a");
-  linkedinLink.setAttribute("href", "https://github.com/rogertavaress");
-  linkedinLink.setAttribute("class", "linkTerminal");
-  linkedinLink.appendChild(
+  const githubLink = document.createElement("a");
+  githubLink.setAttribute("href", "https://github.com/rogertavaress");
+  githubLink.setAttribute("class", "linkTerminal");
+  githubLink.setAttribute("target", "_blank");
+  githubLink.appendChild(
     document.createTextNode("https://github.com/rogertavaress")
   );
 
-  list.appendChild(linkedinLink);
+  list.appendChild(githubLink);
 
   area.appendChild(title);
   area.appendChild(list);
@@ -285,6 +287,43 @@ function comandContatos() {
   title.setAttribute("alt", "Habilidades");
   title.setAttribute("class", "title");
   const list = document.createElement("p");
+
+  const emailLink = document.createElement("a");
+  emailLink.setAttribute("href", "mailto:rogerioctf@gmail.com");
+  emailLink.setAttribute("class", "linkTerminal");
+  emailLink.setAttribute("target", "_blank");
+  emailLink.appendChild(document.createTextNode("rogerioctf@gmail.com"));
+
+  const githubLink = document.createElement("a");
+  githubLink.setAttribute("href", "https://github.com/rogertavaress");
+  githubLink.setAttribute("class", "linkTerminal");
+  githubLink.setAttribute("target", "_blank");
+  githubLink.appendChild(
+    document.createTextNode("https://github.com/rogertavaress")
+  );
+
+  const linkedinLink = document.createElement("a");
+  linkedinLink.setAttribute(
+    "href",
+    "https://www.linkedin.com/in/rogertavaress/"
+  );
+  linkedinLink.setAttribute("class", "linkTerminal");
+  linkedinLink.setAttribute("target", "_blank");
+  linkedinLink.appendChild(
+    document.createTextNode("https://www.linkedin.com/in/rogertavaress")
+  );
+
+  list.appendChild(document.createTextNode("Onde você pode me encontrar?"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("Email: "));
+  list.appendChild(emailLink);
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("Github: "));
+  list.appendChild(githubLink);
+  list.appendChild(document.createElement("br"));
+  list.appendChild(document.createTextNode("Linkedin: "));
+  list.appendChild(linkedinLink);
 
   area.appendChild(title);
   area.appendChild(list);
