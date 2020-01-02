@@ -46,16 +46,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   height: 100%;
   min-width: 100%;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
   right: 0px;
   z-index: -100;
-  -webkit-transform: translateZ(0);
-  pointer-events: none;
+  /* -webkit-transform: translateZ(0); */
+  /* pointer-events: none; */
 }
 
 @media (max-width: 1025px) {
@@ -63,7 +60,7 @@ body {
     width: 50%;
   }
   .bg {
-    transform: TranslateX(-20%);
+    /* transform: TranslateX(-20%); */
   }
 }
 
@@ -72,7 +69,7 @@ body {
     width: 60%;
   }
   .bg {
-    transform: TranslateX(-30%);
+    /* transform: TranslateX(-30%); */
   }
 }
 
@@ -81,13 +78,13 @@ body {
     width: 100%;
   }
   .bg {
-    transform: TranslateX(-40%);
+    /* transform: TranslateX(-40%); */
   }
 }
 
 @media (max-width: 500px) {
   .bg {
-    transform: TranslateX(-50%);
+    /* transform: TranslateX(-50%); */
   }
 }
 
@@ -96,13 +93,13 @@ body {
     height: 1em;
   }
   .bg {
-    transform: TranslateX(-60%);
+    /* transform: TranslateX(-60%); */
   }
 }
 
 @media (min-height: 1000px) {
   .bg {
-    transform: TranslateX(-50%);
+    /* transform: TranslateX(-50%); */
   }
 }
 
