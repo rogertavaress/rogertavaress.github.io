@@ -116,10 +116,6 @@ function outputComand(comand) {
 
 function comandHelp() {
   const area = document.createElement("div");
-  const title = document.createElement("img");
-  title.setAttribute("src", "./img/ajuda.svg");
-  title.setAttribute("alt", "Help");
-  title.setAttribute("class", "title");
   const list = document.createElement("p");
   list.appendChild(document.createTextNode("Lista de Comandos:"));
   list.appendChild(document.createElement("br"));
@@ -150,7 +146,6 @@ function comandHelp() {
   list.appendChild(document.createElement("br"));
   list.appendChild(document.createTextNode("- Limpar -> Limpar a tela."));
 
-  area.appendChild(title);
   area.appendChild(list);
 
   janela.appendChild(area);
@@ -158,10 +153,6 @@ function comandHelp() {
 
 function comandAbout() {
   const area = document.createElement("div");
-  const title = document.createElement("img");
-  title.setAttribute("src", "./img/sobre.svg");
-  title.setAttribute("alt", "About me");
-  title.setAttribute("class", "title");
   const list = document.createElement("p");
   list.appendChild(
     document.createTextNode(
@@ -189,7 +180,6 @@ function comandAbout() {
     )
   );
 
-  area.appendChild(title);
   area.appendChild(list);
 
   janela.appendChild(area);
@@ -197,10 +187,6 @@ function comandAbout() {
 
 function comandExperiences() {
   const area = document.createElement("div");
-  const title = document.createElement("img");
-  title.setAttribute("src", "./img/exp.svg");
-  title.setAttribute("alt", "Experiências");
-  title.setAttribute("class", "title");
   const list = document.createElement("p");
   list.appendChild(document.createTextNode("Experiências Profissionais:"));
   list.appendChild(document.createElement("br"));
@@ -227,7 +213,6 @@ function comandExperiences() {
 
   list.appendChild(linkedinLink);
 
-  area.appendChild(title);
   area.appendChild(list);
 
   janela.appendChild(area);
@@ -235,11 +220,8 @@ function comandExperiences() {
 
 function comandSkills() {
   const area = document.createElement("div");
-  const title = document.createElement("img");
-  title.setAttribute("src", "./img/hab.svg");
-  title.setAttribute("alt", "Habilidades");
-  title.setAttribute("class", "title");
   const list = document.createElement("p");
+  list.appendChild(document.createTextNode("Tecnologias que estudo:"));
   const pre = document.createElement("pre");
   pre.appendChild(document.createTextNode("Linguagens:"));
   pre.appendChild(document.createElement("br"));
@@ -274,7 +256,6 @@ function comandSkills() {
 
   list.appendChild(githubLink);
 
-  area.appendChild(title);
   area.appendChild(list);
 
   janela.appendChild(area);
@@ -282,10 +263,6 @@ function comandSkills() {
 
 function comandContatos() {
   const area = document.createElement("div");
-  const title = document.createElement("img");
-  title.setAttribute("src", "./img/contatos.svg");
-  title.setAttribute("alt", "Habilidades");
-  title.setAttribute("class", "title");
   const list = document.createElement("p");
 
   const emailLink = document.createElement("a");
@@ -336,7 +313,6 @@ function comandContatos() {
   list.appendChild(document.createTextNode("Twitter: "));
   list.appendChild(twitterLink);
 
-  area.appendChild(title);
   area.appendChild(list);
 
   janela.appendChild(area);
