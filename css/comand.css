@@ -5,8 +5,16 @@
   color: white;
   font-size: 1em;
   margin-left: 5px;
+  width: 30%;
 }
 
 .title {
-  width: 99%;
+  width: 100%;
+}
+
+.linkTerminal {
+  color: white;
+}
+.linkTerminal:hover {
+  color: rgb(201, 201, 201);
 }

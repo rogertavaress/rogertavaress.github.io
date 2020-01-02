@@ -8,15 +8,78 @@ body {
   background-color: #292736;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-header {
+.barratituloMax {
+  position: sticky;
+  top: 0;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   background-color: #21222c;
-  margin: 0;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   border-radius: 5px 5px 0px 0px;
+}
+
+.barratituloMin {
+  position: fixed;
+  bottom: 0;
+  width: 35%;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: #21222c;
+  padding: 10px 0px 10px 0px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.botao {
+  height: 1.5em;
+}
+
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  right: 0px;
+  z-index: -100;
+}
+
+@media (max-width: 1025px) {
+  .barratituloMin {
+    width: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  .barratituloMin {
+    width: 60%;
+  }
+}
+
+@media (max-width: 690px) {
+  .barratituloMin {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .botao {
+    height: 1em;
+  }
+}
+
+header > div,
+header > a {
+  margin: 0px 10px 0px 10px;
 }
 
 .janela {
