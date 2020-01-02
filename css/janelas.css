@@ -12,7 +12,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: -10;
 }
 
 .barratituloMax {
@@ -43,12 +42,37 @@ body {
   height: 1.5em;
 }
 
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  min-width: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -100;
+  -webkit-transform: translateZ(0);
+  pointer-events: none;
+}
+
 @media (max-width: 1025px) {
   .barratituloMin {
     width: 50%;
   }
-  body {
-    background-position-x: 65%;
+  .bg {
+    transform: TranslateX(-20%);
+  }
+}
+
+@media (max-width: 850px) {
+  .barratituloMin {
+    width: 60%;
+  }
+  .bg {
+    transform: TranslateX(-30%);
   }
 }
 
@@ -56,14 +80,29 @@ body {
   .barratituloMin {
     width: 100%;
   }
-  body {
-    background-position-x: 65%;
+  .bg {
+    transform: TranslateX(-40%);
+  }
+}
+
+@media (max-width: 500px) {
+  .bg {
+    transform: TranslateX(-50%);
   }
 }
 
 @media (max-width: 350px) {
   .botao {
     height: 1em;
+  }
+  .bg {
+    transform: TranslateX(-60%);
+  }
+}
+
+@media (min-height: 1000px) {
+  .bg {
+    transform: TranslateX(-50%);
   }
 }
 
