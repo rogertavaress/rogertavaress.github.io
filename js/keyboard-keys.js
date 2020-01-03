@@ -10,6 +10,7 @@ function keyboardKeys(e) {
   }
   // Tab
   if (e.keyCode === 9) {
+    e.preventDefault();
     autoComplete(ultimoInput().value.toUpperCase());
   }
   // Cima
